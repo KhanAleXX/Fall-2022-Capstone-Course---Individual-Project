@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% if user.is_authenticated %}
+<h1> Welcome to the Spotify Recommender App! </h1>
+{% else %}
+<h1> Please log in or sign up first to use the Recommender </h1>
+{% endif %}
+{% endblock content %}
+
+
